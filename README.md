@@ -1,3 +1,9 @@
+## inital setup
+`cd ~/.config`
+`git init`
+`git remote add origin <repo_url>`
+`git pull origin main`
+
 ## tools
 
 ### required tools
@@ -7,5 +13,5 @@
 mkdir -p "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
 asdf completion zsh > "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf"
 
-## optional tools
+### optional tools
 - fzf
