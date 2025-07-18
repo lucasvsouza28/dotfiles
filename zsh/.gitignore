@@ -1,3 +1,4 @@
 /.antidote
 .zcompdump
 .zsh_plugins.zsh
+.zprofile
