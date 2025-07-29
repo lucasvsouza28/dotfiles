@@ -8,8 +8,9 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity/colorscheme/tokyodark-nvim/" },
+  -- { import = "astrocommunity/colorscheme/tokyodark-nvim/" },
   { import = "astrocommunity/colorscheme/tokyonight-nvim/" },
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   -- import/override with your plugins folder
 }
