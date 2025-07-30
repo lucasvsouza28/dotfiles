@@ -4,4 +4,4 @@
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
--- vim.keymap.set({"n", "v"}, "<leader>lf", vim.lsp.buf.format, { desc = "Format" })
+-- vim.keymap.set("n", "<leader>lp", vim.diagnostics.open_float, { desc = "Open float diagnostics" })
