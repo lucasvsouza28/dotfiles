@@ -1,7 +1,6 @@
 # tmux setup
 
 - install tmux
-- `ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf`
-- install [plugin manager](https://github.com/tmux-plugins/tpm)
+- install [plugin manager](https://github.com/tmux-plugins/tpm) on ~/.config/tmux/plugins
 - create session: `tmux`
 - inside sesson: `prefix + I`
