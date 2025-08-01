@@ -18,7 +18,6 @@ return {
         "gopls",
         "lua-language-server",
         "typescript-language-server",
-        "omnisharp",
 
         -- install formatters
         "stylua",
