@@ -18,6 +18,9 @@ return {
         "gopls",
         "lua-language-server",
         "typescript-language-server",
+        "csharp-language-server",
+        -- "elixir-ls",
+        "lexical",
 
         -- install formatters
         "stylua",

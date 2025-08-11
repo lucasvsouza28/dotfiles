@@ -58,6 +58,29 @@ return {
           },
         },
       },
+      -- elixirls = {
+      --   cmd = {
+      --     vim.fn.stdpath "data" .. "/mason/packages/elixir-ls/language_server.sh",
+      --   },
+      --   settings = {
+      --     elixirLS = {
+      --       -- Reduce compilation output
+      --       mixEnv = "dev",
+      --       projectDir = ".",
+      --       dialyzerEnabled = true,
+      --       fetchDeps = false, -- Set to false to reduce startup time
+      --       suggestSpecs = true,
+      --       -- Suppress some warnings
+      --       enableTestLenses = true,
+      --       incrementalDialyzer = true,
+      --     },
+      --   },
+      -- },
+      lexical = {
+        cmd = { vim.fn.stdpath "data" .. "/mason/packages/lexical/lexical" },
+        filetypes = { "elixir", "eelixir", "heex" },
+        settings = {},
+      },
     },
     -- customize how language servers are attached
     handlers = {
