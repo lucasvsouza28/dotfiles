@@ -34,12 +34,11 @@ antidote load
 # append completions to fpath
 fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 
-#### aliases ####
-alias bat="batcat"
-alias l=ls
-alias ll='ls -lh'
-alias la='ls -lAh'
-alias ldot='ls -ld .*'
-
-#### p10k ####
-[[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
+# Source anything in .zshrc.d.
+for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
+  # Ignore tilde files.
+  if [[ $_rc:t != '~'* ]]; then
+    source "$_rc"
+  fi
+done
+unset _rc
