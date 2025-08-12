@@ -3,7 +3,7 @@
 # .fzf - install and source fzf
 #
 
-source ./asdf_latest.zsh
+source ~/.config/zsh/.zshrc.d/asdf_latest.zsh
 
 if ! asdf plugin list | grep -q "fzf"; then
   asdf_latest fzf
