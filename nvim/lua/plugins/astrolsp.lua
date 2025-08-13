@@ -58,28 +58,35 @@ return {
           },
         },
       },
-      -- elixirls = {
-      --   cmd = {
-      --     vim.fn.stdpath "data" .. "/mason/packages/elixir-ls/language_server.sh",
-      --   },
-      --   settings = {
-      --     elixirLS = {
-      --       -- Reduce compilation output
-      --       mixEnv = "dev",
-      --       projectDir = ".",
-      --       dialyzerEnabled = true,
-      --       fetchDeps = false, -- Set to false to reduce startup time
-      --       suggestSpecs = true,
-      --       -- Suppress some warnings
-      --       enableTestLenses = true,
-      --       incrementalDialyzer = true,
-      --     },
-      --   },
-      -- },
       lexical = {
         cmd = { vim.fn.stdpath "data" .. "/mason/packages/lexical/lexical" },
         filetypes = { "elixir", "eelixir", "heex" },
         settings = {},
+        timeout_ms = 30000,
+        capabilities = {
+          textDocument = {
+            definition = {
+              dynamicRegistration = true,
+              linkSupport = true,
+            },
+            references = {
+              dynamicRegistration = true,
+            },
+            hover = {
+              dynamicRegistration = true,
+              contentFormat = { "markdown", "plaintext" },
+            },
+            completion = {
+              dynamicRegistration = true,
+              completionItem = {
+                snippetSupport = true,
+                resolveSupport = {
+                  properties = { "documentation", "detail", "additionalTextEdits" },
+                },
+              },
+            },
+          },
+        },
       },
     },
     -- customize how language servers are attached
