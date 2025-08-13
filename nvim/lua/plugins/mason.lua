@@ -13,13 +13,10 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
-        "docker-compose-language-service",
-        "dockerfile-language-server",
         "gopls",
         "lua-language-server",
         "typescript-language-server",
         "csharp-language-server",
-        -- "elixir-ls",
         "lexical",
 
         -- install formatters

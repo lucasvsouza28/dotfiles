@@ -9,8 +9,8 @@ return {
   "AstroNvim/astrocommunity",
   -- packs
   { import = "astrocommunity.pack.lua" },
-  --- c# pack
   { import = "astrocommunity.pack.cs" },
+  { import = "astrocommunity.pack.docker" },
 
   -- colorscheme
   { import = "astrocommunity/colorscheme/tokyonight-nvim/" },
