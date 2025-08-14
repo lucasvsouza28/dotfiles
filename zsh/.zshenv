@@ -5,7 +5,7 @@ export ZDOTDIR=~/.config/zsh # (note) path != path in string
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 #### starhip ####
-export STARSHIP_CONFIG=~/.config/starship/tokyo.toml
+export STARSHIP_CONFIG=~/.config/starship/tokyo-night.toml
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU path fpath

@@ -1,0 +1,114 @@
+format = """
+[ ](blue)\
+[ $os ](bg:green fg:#1c1c1c)\
+[](bg:gray fg:green)\
+$directory\
+[](fg:gray bg:black)\
+$git_branch\
+$git_status\
+[](fg:black bg:#212736)\
+$nodejs\
+$rust\
+$golang\
+$php\
+$dotnet\
+$elixir\
+[](fg:#212736 bg:#1d2230)\
+$time\
+[ ](fg:#1d2230)\
+\n$character"""
+
+palette = "tokyo-night"
+
+[palettes.tokyo-night]
+black = "#1c1c1c"
+white = "#afafd7"
+gray = "#394260"
+dark-gray = "#212736"
+purple = "#a17cc5"
+blue = "#7394d5"
+orange = "#cca75b"
+green = "#00d7d7"
+light-green = "#afd75f"
+
+[directory]
+style = "fg:white bg:gray"
+format = "[ $path ]($style)"
+#truncation_length = 2
+#truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:black"
+format = '[[ $symbol $branch ](fg:blue bg:black)]($style)'
+
+[git_status]
+style = "bg:black"
+format = '[[($all_status$ahead_behind )](fg:blue bg:black)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:dark-gray"
+format = '[[ $symbol ($version) ](fg:blue bg:dark-gray)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:dark-gray"
+format = '[[ $symbol ($version) ](fg:blue bg:dark-gray)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:dark-gray"
+format = '[[ $symbol ($version) ](fg:blue bg:dark-gray)]($style)'
+
+[php]
+symbol = ""
+style = "bg:darg-gray"
+format = '[[ $symbol ($version) ](fg:blue bg:dark-gray)]($style)'
+
+[dotnet]
+symbol = ".net"
+style = "bg:dark-gray"
+format = '[[ $symbol ($version) ](fg:blue bg:dark-gray)]($style)'
+
+[elixir]
+symbol = "elixir"
+style = "bg:dark-gray"
+format = '[[ $symbol ($version) ](fg:blue bg:dark-gray)]($style)'
+
+[os]
+disabled = false
+style = "bg:red fg:crust"
+
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:dark-gray"
+format = '[[ $time ](fg:light-green bg:dark-gray)]($style)'
