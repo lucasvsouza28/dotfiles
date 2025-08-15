@@ -9,4 +9,4 @@ if ! asdf plugin list | grep -q "zoxide"; then
   asdf_latest "zoxide"
 fi
 
-[[ -f "$(asdf which zoxide)" ]] && eval "$(zoxide init zsh)"
+[[ "$(command -v zoxide)" ]] && eval "$(zoxide init zsh)"
