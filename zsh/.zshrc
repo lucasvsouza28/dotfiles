@@ -24,6 +24,9 @@ fi
 source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
 antidote load
 
+eval "$(mise activate zsh)"
+eval "$(starship init zsh)"
+
 # Source anything in .zshrc.d.
 for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
   # Ignore tilde files.
@@ -32,6 +35,3 @@ for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
   fi
 done
 unset _rc
-
-eval "$(starship init zsh)"
-eval "$(mise activate zsh)"
