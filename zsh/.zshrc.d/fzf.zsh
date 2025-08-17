@@ -3,10 +3,8 @@
 # .fzf - install and source fzf
 #
 
-source ~/.config/zsh/.zshrc.d/asdf_latest.zsh
-
-if ! asdf plugin list | grep -q "fzf"; then
-  asdf_latest fzf
+if ! command -v fzf >/dev/null 2>&1; then
+  mise use -g fzf
 fi
 
-[[ -f "$(asdf where fzf)/shell/key-bindings.zsh" ]] && source "$(asdf where fzf)/shell/key-bindings.zsh"
+[[ $(command -v "fzf") ]] && source <(fzf --zsh)

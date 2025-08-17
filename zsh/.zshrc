@@ -24,10 +24,6 @@ fi
 source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
 antidote load
 
-#### asdf ####
-# append completions to fpath
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
-
 # Source anything in .zshrc.d.
 for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
   # Ignore tilde files.
@@ -38,3 +34,4 @@ done
 unset _rc
 
 eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
