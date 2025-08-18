@@ -9,4 +9,5 @@
 
 ### required tools
 
+- stow
 - mise
