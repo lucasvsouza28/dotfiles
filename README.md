@@ -13,6 +13,6 @@
 - run:
 
 `cd ~/dotfiles`
-`stow mise nvim starship tmux zsh`
+`stow -t ~ */`
 
 > see [tmux docs](tmux/.config/tmux/readme.md) for tmux related setup
