@@ -2,6 +2,7 @@
 dotnet = "latest"
 elixir = "1.18.4-otp-26"
 erlang = "26.0.2"
+eza = "latest"
 fzf = "latest"
 go = "latest"
 node = "latest"

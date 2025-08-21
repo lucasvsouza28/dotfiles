@@ -4,8 +4,5 @@
 #
 
 alias bat="batcat"
-alias l=ls
-alias ll='ls -lh'
-alias la='ls -lAh'
-alias ldot='ls -ld .*'
+alias la='eza -lahg --icons --group-directories-first' # eza l=long, a=all, h=header,=group
 alias n="nvim"
