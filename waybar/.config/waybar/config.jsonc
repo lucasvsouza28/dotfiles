@@ -43,7 +43,7 @@
     "custom/updates",
     "bluetooth",
     "battery",
-    "power-profiles-daemon",
+    // "power-profiles-daemon",
     "group/hardware",
     "group/tools",
     "tray",
