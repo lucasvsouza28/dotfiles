@@ -1,0 +1,12 @@
+/* -----------------------------------------------------
+ * Import Pywal colors
+ * ----------------------------------------------------- */
+@define-color backgroundlight rgba(255, 255, 255, 0.8);
+@define-color backgrounddark #FFFFFF;
+@define-color workspacesbackground1 #FFF;
+@define-color workspacesbackground2 @on_surface;
+@define-color bordercolor #FFFFFF;
+@define-color textcolor1 #000000;
+@define-color textcolor2 #000000;
+@define-color textcolor3 #000000;
+@define-color iconcolor #FFFFFF;
