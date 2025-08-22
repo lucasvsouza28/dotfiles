@@ -75,9 +75,9 @@
   // Cliphist
   "custom/cliphist": {
     "format": "",
-    "on-click": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh",
-    "on-click-right": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh w",
+    "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist-walker.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist-walker.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist-walker.sh w",
     "tooltip-format": "Left: Open clipboard Manager\nRight: Delete an entry\nMiddle: Clear list"
   },
 
@@ -91,6 +91,7 @@
   },
 
   // Wallpaper
+  // TODO: refac?
   "custom/wallpaper": {
     "format": "",
     "on-click": "bash -c waypaper &",
@@ -269,7 +270,7 @@
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
-    "modules": ["custom/tools", "custom/hypridle"]
+    "modules": ["custom/tools", "custom/hypridle", "custom/cliphist"]
   },
 
   // Group Links
