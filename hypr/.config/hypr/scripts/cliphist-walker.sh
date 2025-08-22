@@ -3,11 +3,13 @@
 case $1 in
 d)
 	cliphist list | walker -d -l 2 -V 1 -p "select a entry to remove from clipboard" | cliphist delete
+	notify-send "clipboard entry removed"
 	;;
 
 w)
 	if [ $(echo -e "Clear\nCancel" | walker -d -p "Clear clipboard history?") == "Clear" ]; then
 		cliphist wipe
+		notify-send "clipboard history cleared"
 	fi
 	;;
 
