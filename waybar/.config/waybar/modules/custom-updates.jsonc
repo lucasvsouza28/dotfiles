@@ -1,6 +1,6 @@
 {
-  "custom/updates": {
-    "format": " ",
+  "custom/update": {
+    "format": "",
     "exec": "omarchy-update-available",
     "on-click": "alacritty --class Omarchy --title Omarchy -e omarchy-update",
     "tooltip-format": "Omarchy update available",

@@ -19,10 +19,7 @@
   "height": 26,
 
   // Load Modules
-  "include": [
-    "~/.config/ml4w/settings/waybar-quicklinks.json",
-    "~/.config/waybar/modules.json",
-  ],
+  "include": ["~/.config/waybar/modules.json"],
 
   // Modules Left
   "modules-left": [
@@ -40,7 +37,7 @@
 
   // Modules Right
   "modules-right": [
-    "custom/updates",
+    "custom/update",
     "bluetooth",
     "battery",
     // "power-profiles-daemon",
