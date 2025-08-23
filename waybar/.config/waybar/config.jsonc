@@ -38,13 +38,12 @@
   // Modules Right
   "modules-right": [
     "custom/update",
-    "bluetooth",
     "battery",
-    // "power-profiles-daemon",
     "group/hardware",
     "group/tools",
     "tray",
     "pulseaudio",
+    "bluetooth",
     "network",
     "custom/notification",
     "clock",

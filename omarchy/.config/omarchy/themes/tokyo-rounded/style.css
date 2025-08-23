@@ -26,6 +26,7 @@
   border: none;
   border-radius: 0px;
   min-height: 0px;
+  font-size: 12px;
 }
 
 window#waybar {
@@ -109,7 +110,6 @@ tooltip label {
   padding: 0px 10px;
   border-radius: 16px;
   color: @textcolor1;
-  font-size: 12px;
   font-weight: normal;
   border-bottom: 2px;
   border-style: solid;
@@ -200,7 +200,6 @@ window#waybar.empty #window {
 #custom-quicklink10,
 #custom-waybarthemes {
   margin-right: 16px;
-  font-size: 12px;
   font-weight: bold;
   opacity: 0.8;
   color: @iconcolor;
@@ -288,7 +287,6 @@ window#waybar.empty #window {
 
 #custom-appmenu {
   background-color: @backgrounddark;
-  font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 0px 10px 0px 10px;
@@ -304,7 +302,6 @@ window#waybar.empty #window {
 #custom-notification {
   margin: 0px 13px 0px 0px;
   padding: 0px;
-  font-size: 12px;
   color: @iconcolor;
   opacity: 0.8;
 }
@@ -316,7 +313,6 @@ window#waybar.empty #window {
 #custom-exit {
   margin: 0px 13px 0px 0px;
   padding: 0px;
-  font-size: 12px;
   color: @iconcolor;
   opacity: 0.8;
 }
@@ -359,7 +355,6 @@ window#waybar.empty #window {
 #language {
   margin: 0px;
   padding: 0px;
-  font-size: 12px;
   color: @iconcolor;
 }
 
@@ -374,7 +369,6 @@ window#waybar.empty #window {
 #power-profiles-daemon {
   margin: 0px 13px 0px 0px;
   padding: 0px;
-  font-size: 12px;
   color: @iconcolor;
 }
 
@@ -384,7 +378,6 @@ window#waybar.empty #window {
 
 #clock {
   background-color: @backgroundlight;
-  font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 0px 8px 0px 8px;
@@ -401,7 +394,6 @@ window#waybar.empty #window {
 
 #backlight {
   background-color: @backgroundlight;
-  font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 2px 10px 0px 10px;
@@ -415,7 +407,6 @@ window#waybar.empty #window {
 
 #pulseaudio {
   background-color: @backgroundlight;
-  font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 2px 10px;
@@ -437,7 +428,6 @@ window#waybar.empty #window {
 
 #network {
   background-color: @backgroundlight;
-  font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 2px 10px 0px 10px;
@@ -462,16 +452,21 @@ window#waybar.empty #window {
  * Bluetooth
  * ----------------------------------------------------- */
 
-#bluetooth,
-#bluetooth.on,
-#bluetooth.connected {
+#bluetooth {
   background-color: @backgroundlight;
-  font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 0px 15px 5px 0px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px 15px 0px 0px;
   opacity: 0.8;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: @border;
+}
+
+#bluetooth.connected,
+#bluetooth.on {
+  border-color: green;
 }
 
 #bluetooth.off {
@@ -486,7 +481,6 @@ window#waybar.empty #window {
 
 #battery {
   background-color: @backgroundlight;
-  font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
   padding: 2px 15px 0px 10px;
