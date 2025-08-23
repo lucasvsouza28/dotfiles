@@ -80,7 +80,7 @@
     "format-disabled": "",
     "format-off": "",
     "interval": 30,
-    "on-click": "sleep 0.1 && ~/.config/ml4w/settings/bluetooth.sh",
+    "on-click": "blueberry",
     "format-no-controller": ""
   },
 
