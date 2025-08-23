@@ -74,7 +74,7 @@ window#waybar {
   border-radius: 15px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgba(33ccffee) rgba(00ff99ee) 45deg;
+  border-color: @border;
   min-width: 30px;
 }
 
@@ -111,6 +111,9 @@ tooltip label {
   color: @textcolor1;
   font-size: 12px;
   font-weight: normal;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: @border;
 }
 
 window#waybar.empty #window {
@@ -384,9 +387,12 @@ window#waybar.empty #window {
   font-size: 12px;
   color: @textcolor1;
   border-radius: 15px;
-  padding: 2px 8px 0px 8px;
+  padding: 0px 8px 0px 8px;
   margin: 0px 0px 0px 0px;
   opacity: 0.8;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: @border;
 }
 
 /* -----------------------------------------------------
@@ -415,6 +421,9 @@ window#waybar.empty #window {
   padding: 2px 10px;
   margin: 0px 15px 0px 0px;
   opacity: 0.8;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: @border;
 }
 
 #pulseaudio.muted {
@@ -434,6 +443,9 @@ window#waybar.empty #window {
   padding: 2px 10px 0px 10px;
   margin: 0px 15px 0px 0px;
   opacity: 0.8;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: @border;
 }
 
 #network.ethernet {
