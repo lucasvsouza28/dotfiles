@@ -456,10 +456,10 @@ window#waybar.empty #window {
 #bluetooth {
   background-color: @backgroundlight;
   color: @textcolor1;
-  border-radius: 15px;
   padding: 0px 10px 0px 10px;
   margin: 0px 15px 0px 0px;
   opacity: 0.8;
+  border-radius: 15px;
   border-bottom: 2px;
   border-style: solid;
   border-color: @border;
@@ -471,9 +471,7 @@ window#waybar.empty #window {
 }
 
 #bluetooth.off {
-  background-color: transparent;
-  padding: 0px;
-  margin: 0px;
+  border-color: red;
 }
 
 /* -----------------------------------------------------
