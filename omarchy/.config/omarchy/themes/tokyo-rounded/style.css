@@ -118,6 +118,7 @@ tooltip label {
 
 window#waybar.empty #window {
   background-color: transparent;
+  border: none;
 }
 
 /* -----------------------------------------------------
