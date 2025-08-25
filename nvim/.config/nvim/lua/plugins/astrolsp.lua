@@ -24,11 +24,13 @@ return {
         ignore_filetypes = { -- disable format on save for specified filetypes
           "lua",
           "elixir",
+          "sh",
         },
       },
       disabled = {
         "lua_ls", -- formatted with conform.nvim
         "lexical", -- formatted with conform.nvim
+        "shfmt",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function

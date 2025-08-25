@@ -8,8 +8,17 @@ return {
       lua = { "stylua" },
       cs = { "csharpier" },
       csharp = { "csharpier" },
+      sh = { "shfmt" },
+      bash = { "shfmt" },
+      zsh = { "shfmt" },
     },
     formatters = {
+      shfmt = {
+        inherit = false,
+        command = "shfmt",
+        args = { "-i", "2", "-ci" },
+        stdin = true,
+      },
       -- mix = {
       --   command = "mix",
       --   args = { "format", "-" },
