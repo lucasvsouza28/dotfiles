@@ -1,0 +1,116 @@
+//  __  __           _       _
+// |  \/  | ___   __| |_   _| | ___  ___
+// | |\/| |/ _ \ / _` | | | | |/ _ \/ __|
+// | |  | | (_) | (_| | |_| | |  __/\__ \
+// |_|  |_|\___/ \__,_|\__,_|_|\___||___/
+//
+//
+{
+  "include": [
+    "~/.config/omarchy/themes/tokyo-rounded/modules/hyprland-window.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/hyprland-workspaces.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/custom-cliphist.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/custom-hypridle.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/custom-updates.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/custom-omarchy.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/hardware-group.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/sway-nc.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/tools-group.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/power-profiles.jsonc",
+    "~/.config/omarchy/themes/tokyo-rounded/modules/pulseaudio.jsonc"
+  ],
+
+  // Empty
+  "custom/empty": {
+    "format": ""
+  },
+
+  // System tray
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+
+  // Clock
+  "clock": {
+    "format": "{:%A, %B %d %H:%M}",
+    "tooltip": false,
+    "on-click-right": "omarchy-cmd-tzupdate"
+  },
+
+  "hyprland/language": {
+    "format": "/ K {short}"
+  },
+
+  // Network
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": " {essid} ({signalStrength}%)",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": "Disconnected ⚠",
+    "tooltip-format": " {ifname} via {gwaddri}",
+    "tooltip-format-wifi": " {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "interval": 3,
+    "nospacing": 1,
+    "on-click": "alacritty --class=Impala -e impala"
+  },
+
+  // Battery
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{icon}  {time}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": [" ", " ", " ", " ", " "]
+  },
+
+  // Bluetooth
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "",
+    "format-off": "",
+    "interval": 30,
+    "on-click": "blueberry",
+    "format-no-controller": ""
+  },
+
+  // Other
+  "user": {
+    "format": "{user}",
+    "interval": 60,
+    "icon": false
+  },
+
+  // backlight:
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "scroll-step": 1
+  }
+}

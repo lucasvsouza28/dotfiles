@@ -1,0 +1,18 @@
+{
+  // Tools
+  "custom/tools": {
+    "format": "",
+    "tooltip-format": "Tools",
+  },
+
+  // Group Tools
+  "group/tools": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false,
+    },
+    "modules": ["custom/tools", "custom/hypridle", "custom/cliphist"],
+  },
+}

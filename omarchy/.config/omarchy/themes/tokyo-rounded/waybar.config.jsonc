@@ -1,0 +1,39 @@
+{
+  // General Settings
+  "layer": "top",
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "spacing": 0,
+  "height": 26,
+
+  // Load Modules
+  "include": ["~/.config/omarchy/themes/tokyo-rounded/modules.json"],
+
+  // Modules Left
+  "modules-left": [
+    "custom/omarchy",
+    "group/links",
+    "group/quicklinks",
+    "hyprland/window",
+    "custom/empty",
+  ],
+
+  // Modules Center
+  "modules-center": ["hyprland/workspaces"],
+
+  // Modules Right
+  "modules-right": [
+    "custom/update",
+    "battery",
+    "group/hardware",
+    "group/tools",
+    "tray",
+    "pulseaudio",
+    "bluetooth",
+    "network",
+    "custom/notification",
+    "clock",
+  ],
+}

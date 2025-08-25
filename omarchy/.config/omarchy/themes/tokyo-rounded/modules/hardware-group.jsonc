@@ -1,0 +1,35 @@
+{
+  // System
+  "custom/system": {
+    "format": "",
+    "tooltip": false,
+  },
+
+  // CPU
+  "cpu": {
+    "format": "/ C {usage}% ",
+  },
+
+  // Memory
+  "memory": {
+    "format": "/ M {}% ",
+  },
+
+  // Harddisc space used
+  "disk": {
+    "interval": 30,
+    "format": "D {percentage_used}% ",
+    "path": "/",
+  },
+
+  // Group Hardware
+  "group/hardware": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false,
+    },
+    "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"],
+  },
+}
