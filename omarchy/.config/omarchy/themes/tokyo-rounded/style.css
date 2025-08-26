@@ -322,14 +322,10 @@ window#waybar.empty #window {
  * Custom Updates
  * ----------------------------------------------------- */
 
-#custom-updates {
-  background-color: @backgroundlight;
-  font-size: 14px;
-  color: @textcolor2;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
+#custom-update {
+  /*font-size: 12px;*/
+  color: @iconcolor;
   margin: 0px 15px 0px 0px;
-  opacity: 0.8;
 }
 
 #custom-updates.green {
