@@ -53,14 +53,13 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-  border: 0px;
   font-weight: bold;
   font-style: normal;
 }
 
 #workspaces button {
-  padding: 2px;
-  margin: 0px 2px;
+  padding: 1px 2px;
+  margin: 0px 3px;
   border-radius: 100%;
   border: 0px;
   color: #fff;
@@ -266,21 +265,21 @@ window#waybar.empty #window {
  * Idle Inhibitor
  * ----------------------------------------------------- */
 
-#idle_inhibitor {
-  margin-right: 15px;
-  font-size: 22px;
-  font-weight: bold;
-  opacity: 0.8;
-  color: @iconcolor;
-}
-
-#idle_inhibitor.activated {
-  margin-right: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  opacity: 0.8;
-  color: #dc2f2f;
-}
+/* #idle_inhibitor { */
+/*   margin-right: 15px; */
+/*   font-size: 22px; */
+/*   font-weight: bold; */
+/*   opacity: 0.8; */
+/*   color: @iconcolor; */
+/* } */
+/**/
+/* #idle_inhibitor.activated { */
+/*   margin-right: 15px; */
+/*   font-size: 16px; */
+/*   font-weight: bold; */
+/*   opacity: 0.8; */
+/*   color: #dc2f2f; */
+/* } */
 
 /* -----------------------------------------------------
  * Custom Modules
