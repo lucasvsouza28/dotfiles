@@ -1,9 +1,0 @@
-{
-  "custom/hypridle": {
-    "format": "",
-    "tooltip-format": "Toogle idle",
-    "return-type": "json",
-    "escape": true,
-    "on-click": "omarchy-toggle-idle",
-  },
-}
