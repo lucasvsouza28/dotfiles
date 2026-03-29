@@ -5,11 +5,12 @@
     "on-click": "activate",
     "active-only": false,
     "all-outputs": true,
-    "format": "{name}",
+    "format": "{icon}",
+    "icon-size": 24,
     "format-icons": {
       "urgent": "",
-      "active": "",
-      "default": "",
+      "active": "",
+      "default": "",
     },
     "persistent-workspaces": {
       "*": 5,
