@@ -10,3 +10,6 @@ o.window({
 o.exec_on_start("hyprctl dispatch workspace 1")
 o.launch_on_start("omarchy launch browser")
 o.launch_on_start("discord.desktop")
+
+-- sunshine virtual display
+o.exec_on_start("~/.config/zsh/.zfunctions/sunshine-start")
