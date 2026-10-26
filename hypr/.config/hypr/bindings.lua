@@ -29,3 +29,4 @@
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
 hl.unbind("SUPER + SHIFT + A")
 o.bind("SUPER + SHIFT + A", "Claude", "omarchy launch webapp https://claude.ai")
+o.bind("SUPER + Q", "Calculator", "omarchy-shell shell toggle menu-calc")
