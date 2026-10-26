@@ -28,3 +28,15 @@ require("default.hypr.toggles")
 -- Add any other personal Hyprland configuration below.
 -- o.window("qemu", { workspace = "5" })
 hl.env("SHELL", "/usr/bin/zsh")
+hl.layer_rule({ match = { namespace = "omarchy-calc" }, no_anim = true, animation = "none" })
+-- Blur behind the status bar. Pair this with a translucent [bar] background
+-- (shell.bar.toml in the theme), otherwise an opaque bar hides the blur.
+hl.layer_rule({ match = { namespace = "omarchy-bar" }, blur = true, ignore_alpha = 0.1 })
+hl.window_rule({
+	name = "fix:steam",
+	match = {
+		class = "steam",
+	},
+	tile = true,
+})
+o.window("QMPlay2", { opacity = "1 1" })
