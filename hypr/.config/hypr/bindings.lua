@@ -29,4 +29,9 @@
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
 hl.unbind("SUPER + SHIFT + A")
 o.bind("SUPER + SHIFT + A", "Claude", "omarchy launch webapp https://claude.ai")
+
+hl.unbind("SUPER + Q")
 o.bind("SUPER + Q", "Calculator", "omarchy-shell shell toggle menu-calc")
+
+hl.unbind("SUPER + grave")
+o.bind("SUPER + F12", "Toggle Quake console", hl.dsp.workspace.toggle_special("qconsole"))
