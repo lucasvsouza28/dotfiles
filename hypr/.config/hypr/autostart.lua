@@ -12,4 +12,4 @@ o.launch_on_start("omarchy launch browser")
 o.launch_on_start("discord.desktop")
 
 -- sunshine virtual display
-o.exec_on_start("~/.config/zsh/.zfunctions/sunshine-start")
+o.exec_on_start("~/.local/bin/sunshine-start.sh")
