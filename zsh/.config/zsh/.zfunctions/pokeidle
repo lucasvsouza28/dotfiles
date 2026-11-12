@@ -41,6 +41,11 @@ for i in $(seq 1 "$NUM_INSTANCES"); do
     
     rsync -a "$HOME/.config/chromium/Default/Preferences" "$dir/Default/Preferences"
     
+    # Only copy cookies for acc1 (seeds the session once)
+    if [[ "$i" -eq 1 ]]; then
+        rsync -a "$HOME/.config/chromium/Default/Cookies" "$dir/Default/Cookies"
+    fi
+    
     # master_preferences might not exist in default profile
     if [[ -f "$HOME/.config/chromium/master_preferences" ]]; then
         rsync -a "$HOME/.config/chromium/master_preferences" "$dir/"
@@ -54,11 +59,13 @@ echo ""
 echo "Launching $NUM_INSTANCES instances of Chromium..."
 for i in $(seq 1 "$NUM_INSTANCES"); do
     dir="$HOME/chrome-pokemon/acc$i"
-    "$CHROMIUM_BINARY" \
+    nohup "$CHROMIUM_BINARY" \
         --user-data-dir="$dir" \
         --no-first-run \
         --no-default-browser-check \
-        --app="$GAME" &
+        --use-gl=swiftshader \
+        --app="$GAME" >/dev/null 2>&1 &
+    disown
 done
 
 echo ""
