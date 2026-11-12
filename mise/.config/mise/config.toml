@@ -1,12 +1,10 @@
 [tools]
+claude = "latest"
 codex = "latest"
-dotnet = "latest"
-elixir = "1.18.4-otp-26"
-erlang = "26.0.2"
-eza = "latest"
-fzf = "latest"
-go = "latest"
-node = "latest"
+gh = "latest"
+node = "26.12.0"
+"npm:@xai-official/grok" = "latest"
 opencode = "latest"
-usage = "latest"
-zoxide = "latest"
+
+[settings.upgrade]
+auto_prune = false
